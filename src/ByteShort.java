@@ -1,14 +1,22 @@
 package src;
 
 public class ByteShort {
-    public static void main (String[] args) {
-        int minimumValue = Integer.MIN_VALUE;
-        int maxValue = Integer.MAX_VALUE;
-        System.out.println("test " + minimumValue + " test2 " + maxValue);
-        boolean tests = false;
-        if (!tests)
-            System.out.println("success");
-        boolean test2 = true;
-        test2 ? System.out.println("True") : System.out.println("false");
+    public static void main(String[] args) {
+        int test = calculate(300);
+
+        System.out.println(test);
+    }
+
+    public static int calculate (int score) {
+        if (score > 1000 ) {
+            return 1;
+            }
+        else if (score > 500 && score < 1000) {
+            return 2;
+            }
+        else if (score > 100 && score < 500) {
+            return 3;
+            }
+        return 4;
     }
 }
