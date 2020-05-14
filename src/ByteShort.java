@@ -1,22 +1,16 @@
 package src;
 
+import java.util.Scanner;
+
 public class ByteShort {
     public static void main(String[] args) {
-        int test = calculate(300);
-
-        System.out.println(test);
-    }
-
-    public static int calculate (int score) {
-        if (score > 1000 ) {
-            return 1;
-            }
-        else if (score > 500 && score < 1000) {
-            return 2;
-            }
-        else if (score > 100 && score < 500) {
-            return 3;
-            }
-        return 4;
-    }
+        System.out.println("Enter name: ");
+        // User input
+        Scanner scannerTest = new Scanner(System.in);
+        // Read the next line, capture it as a string called name
+        String name = scannerTest.nextLine();
+        System.out.println("Your name is : " + name);
+        // Release the memory
+        scannerTest.close();
+}
 }
