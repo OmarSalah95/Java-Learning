@@ -8,12 +8,14 @@ public class ByteShort {
         // User input
         Scanner scannerTest = new Scanner(System.in);
 
-        System.out.println("Enter DOB: ");
+        
+
         // checks if input is an integer; if not, 
         // it'll return false, which can be handled
-
         boolean hasNextInt = scannerTest.hasNextInt();
+
         if (hasNextInt) {
+            System.out.println("Enter DOB: ");
             long age = scannerTest.nextLong();
             age = 2020 - age;
             scannerTest.nextLine();
