@@ -10,8 +10,8 @@ public class Car {
     // Set a default if no info provided on class creation
     // calls the method that matches parameters given
     // public Car() {
-    //     this("Camry", 2, 4);
-    //     System.out.println("Empty constructor called");
+    // this("Camry", 2, 4);
+    // System.out.println("Empty constructor called");
     // }
     // Constructor
 
@@ -25,6 +25,14 @@ public class Car {
         this.doors = doors;
         this.wheels = wheels;
         System.out.println("New car has been made: " + model + doors + wheels + engine + color);
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public Car(String model) {

@@ -13,7 +13,10 @@ public class Main {
         // System.out.println("Doors is " + holden.getDoors());
         // System.out.println("Doors is " + holden.getEngine());
         // System.out.println("Doors is " + holden.getColor());
-
+        Car toyota = new Car("Testties");
+        System.out.println(toyota.getModel());
+        Person tim = new Person();
+        Person jack = new Person("jack");
     
     }
     
