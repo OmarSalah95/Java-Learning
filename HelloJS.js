@@ -1,5 +1,9 @@
 function HelloWorld () {
     console.log("Hello World")
+    let car = {}
+    car.model = porsche
+
+
 }
 
-HelloWorld()
+console.log(car.model)
